@@ -83,20 +83,20 @@ h2 {
     position: relative;
     z-index: 1;
     text-align: center;
+    left: 100px;
     color: var(--alter-text);
     text-shadow: 2px 2px 5px var(--dark-background);
     text-transform: uppercase;
-    letter-spacing: 0.3em;
-    text-align: right;
-    margin-right: 25%;
+    letter-spacing: 0.4em;
 }
 
 .h2-after {
-    margin: -54px auto 0 auto;
+    margin: -54px auto 30px auto;
     width: 100%;
     height: 35px;
 	transform: skew(-45deg);
     background:var(--dark-background);
+    background-image: url("../img/bg2.jpg");
     box-shadow: 8px 8px 20px var(--dark-background);
 }
 

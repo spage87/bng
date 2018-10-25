@@ -1,0 +1,106 @@
+:root {
+    /* colours */
+    --additional-highlights: #308ae2;
+    --highlight-colour: #23bbbe;
+    --dark-background: #161a34;
+    --main-text: #161a34;
+    --main-background: #f5f7f9;
+    --alter-text: #ffffff;
+
+    /* fonts */
+    --logo-font: 'Viga', sans-serif;
+    --main-font: 'Oswald', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/bg.jpg");
+    background-color: var(--additional-highlights);
+    color: var(--main-text);
+    font-family: var(--main-font);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    background-color: var(--dark-background);
+    color: var(--alter-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-family: var(--logo-font);
+    font-size: 40px;
+    color: var(--highlight-colour);
+}
+
+#nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-bar ul li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+.nav-link {
+    background-color: var(--highlight-colour);
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+
+.nav-link a {
+    color: var(--alter-text);
+    text-decoration: none;
+}
+
+#page-wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+main {
+    background-color: var(--main-background);
+    margin: auto;
+    width: 90%;
+}
+
+.info-image {
+    max-height: 400px;
+    display: block;
+    width: auto;
+    margin: auto;
+}
+
+h2 {
+    /* for the fancy styles */
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: var(--alter-text);
+    text-shadow: 2px 2px 5px var(--dark-background);
+}
+
+.h2-after {
+    margin: -50px auto 0 auto;
+    width: 80%;
+    height: 30px;
+	transform: skew(-45deg);
+    background:var(--highlight-colour);
+    box-shadow: 8px 8px 20px var(--dark-background);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: var(--dark-background);
+}

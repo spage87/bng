@@ -83,7 +83,6 @@ h2 {
     position: relative;
     z-index: 1;
     text-align: center;
-    left: 100px;
     color: var(--alter-text);
     text-shadow: 2px 2px 5px var(--dark-background);
     text-transform: uppercase;

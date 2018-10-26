@@ -130,6 +130,16 @@ h2 {
     height: auto;
 }
 
+.order {
+    position: relative;
+    bottom: 10px;
+    background-color: var(--highlight-colour);
+    padding: 7px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+
 footer {
     background-color: var(--dark-background);
 }

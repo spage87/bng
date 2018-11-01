@@ -108,6 +108,23 @@ h2 {
     letter-spacing: 0.4em;
 }
 
+section:nth-child(odd) {
+    background-color: var(--main-background);
+}
+
+section:nth-child(even) {
+    background-color: var(--dark-background);
+}
+
+section {
+    min-height: 100vh;
+}
+
+.video iframe {
+    width: 80vw;
+    height: 80vh;
+}
+
 .video, .subscribe {
     text-align: center;
 }
@@ -118,8 +135,7 @@ h2 {
 }
 
 .product {
-    width: 300px;
-    padding: 10px;
+    padding: 20px;
     background-color: var(--dark-background);
     color: var(--alter-text);
 }
@@ -128,6 +144,7 @@ h2 {
     max-width: 100%;
     display: block;
     height: auto;
+    margin: auto;
 }
 
 .order {

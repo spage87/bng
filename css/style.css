@@ -6,6 +6,8 @@
     --main-text: #161a34;
     --main-background: #f5f7f9;
     --alter-text: #ffffff;
+    /* more colours */
+    --price: #f9af00;
     /* fonts */
     --logo-font: 'Viga', sans-serif;
     --main-font: 'Oswald', sans-serif;
@@ -158,12 +160,17 @@ section {
 .products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    color: var(--alter-text);
+}
+
+.products a {
+    text-decoration: none;
+    color: var(--alter-text);
 }
 
 .product {
     padding: 20px;
     background-color: var(--dark-background);
-    color: var(--alter-text);
 }
 
 .product img {
@@ -173,9 +180,15 @@ section {
     margin: auto;
 }
 
+.price {
+    text-align: center;
+    color: var(--price);
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+}
+
 .order {
-    position: relative;
-    bottom: 10px;
+    margin: 10px;
     background-color: var(--highlight-colour);
     padding: 7px;
     text-align: center;

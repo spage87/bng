@@ -59,6 +59,7 @@ header {
 
 #nav-bar {
     position: fixed;
+    top: 5vh;
     width: var(--navigation-start);
 }
 
@@ -123,30 +124,43 @@ section {
 }
 
 #carousel {
-    background-repeat: no-repeat;
+    display: flex;
+    overflow: hidden;
 }
 
+.slide {
+    width: 100vw;
+    height: 100vh;
+}
+
+#carousel ul {
+    margin: 0;
+    padding: 0;
+}
+
+#carousel li {
+    list-style: none;
+}
+
+/*
 @media only screen and (max-width: 767px) {
     #carousel {
         background-image: url("../img/carousel/bath-small.jpg");
-        background-position: right;
     }
 }
 
 @media only screen and (min-width: 768px) {
     #carousel {
         background-image: url("../img/carousel/bath-medium.jpg");
-        background-position: right;
     }
 }
 
 @media only screen and (min-width: 992px) {
     #carousel {
         background-image: url("../img/carousel/bath-large.jpg");
-        background-position: right;
     }
 }
-
+*/
 
 .video iframe {
     width: 80vw;

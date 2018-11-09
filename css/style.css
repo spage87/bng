@@ -102,9 +102,12 @@ h2 {
     text-align: center;
     left: 100px;
     color: var(--alter-text);
-    text-shadow: 2px 2px 5px var(--dark-background);
     text-transform: uppercase;
     letter-spacing: 0.4em;
+}
+
+#follow h2 {
+    color: var(--dark-background);
 }
 
 section:nth-child(odd) {
@@ -235,6 +238,22 @@ footer {
     background-color: var(--dark-background);
 }
 
+@media only screen and (min-width: 601px) {
+    #back-to-top {
+        position: fixed;
+        bottom: 0.5em;
+        right: 10px;
+        font-size: 2em;
+        background-color: var(--main-text);
+        padding: 0.1em;
+        border-radius: 50%;
+    }
+    
+    #back-to-top a {
+        color: var(--highlight-colour);
+    }
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 600px),
 all and (-webkit-max-device-pixel-ratio: 1.5) and (max-width: 600px) {
     .nav-link {
@@ -263,21 +282,5 @@ all and (-webkit-max-device-pixel-ratio: 1.5) and (max-width: 600px) {
 
     .products {
         grid-template-columns: repeat(1, 3fr);
-    }
-}
-
-@media only screen and (-webkit-max-device-pixel-ratio: 1.5) and (min-width: 601px) {
-    #back-to-top {
-        position: fixed;
-        bottom: 0.5em;
-        right: 10px;
-        font-size: 2em;
-        background-color: var(--main-text);
-        padding: 0.1em;
-        border-radius: 50%;
-    }
-    
-    #back-to-top a {
-        color: var(--highlight-colour);
     }
 }

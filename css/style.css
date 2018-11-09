@@ -16,9 +16,10 @@
     --navigation-end: 25%;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 600px),
+only screen and (-webkit-max-device-pixel-ratio: 1.5) and (max-width: 600px) {
     .nav-link {
-        font-size: 2em;
+        font-size: 4em;
     }
 
     .full-nav {
@@ -30,7 +31,7 @@
         bottom: 0px;
         left: 0px;
         width: 100%;
-        font-size: 2em;
+        font-size: 3em;
         background-color: var(--highlight-colour);
         padding: 0.1em;
         text-align: center;
@@ -102,7 +103,6 @@ header {
     padding: 0.3em;
     text-transform: uppercase;
     letter-spacing: 0.3em;
-    font-size: 1em;
 }
 
 .nav-link a {

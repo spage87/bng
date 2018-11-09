@@ -199,12 +199,16 @@ section {
     letter-spacing: 0.3em;
 }
 
+.order a {
+    display: block;
+}
+
 footer {
     background-color: var(--dark-background);
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 600px),
-all and (-webkit-max-device-pixel-ratio: 2) and (max-width: 600px) {
+all and (-webkit-max-device-pixel-ratio: 1.5) and (max-width: 600px) {
     .nav-link {
         font-size: 8vw;
     }

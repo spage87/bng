@@ -218,7 +218,7 @@ all and (-webkit-max-device-pixel-ratio: 2) and (max-width: 600px) {
         bottom: 0px;
         left: 0px;
         width: 100%;
-        font-size: large;
+        font-size: 8vw;
         background-color: var(--highlight-colour);
         padding: 0.1em;
         text-align: center;

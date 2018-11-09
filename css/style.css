@@ -16,6 +16,48 @@
     --navigation-end: 25%;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 600px) {
+    .nav-link {
+        font-size: 2em;
+    }
+
+    .full-nav {
+        display: none;
+    }
+        
+    #back-to-top {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        font-size: 2em;
+        background-color: var(--highlight-colour);
+        padding: 0.1em;
+        text-align: center;
+    }
+
+    #back-to-top a {
+        display: block;
+        color: var(--alter-text);
+    }
+}
+
+@media only screen and (-webkit-max-device-pixel-ratio: 1.5) and (min-width: 601px) {
+    #back-to-top {
+        position: fixed;
+        bottom: 0.5em;
+        right: 10px;
+        font-size: 2em;
+        background-color: var(--main-text);
+        padding: 0.1em;
+        border-radius: 50%;
+    }
+    
+    #back-to-top a {
+        color: var(--highlight-colour);
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -60,53 +102,13 @@ header {
     padding: 0.3em;
     text-transform: uppercase;
     letter-spacing: 0.3em;
+    font-size: 1em;
 }
 
 .nav-link a {
     color: var(--alter-text);
     text-decoration: none;
 }
-
-#nav-bar:hover {
-    animation-name: navigation;
-    animation-duration: 1s;
-}
-
-@media only screen and (max-width: 600px) {
-    .full-nav {
-        display: none;
-    }
-        
-    #back-to-top {
-        position: fixed;
-        bottom: 0px;
-        left: 0px;
-        width: 100%;
-        font-size: 2em;
-        background-color: var(--highlight-colour);
-        padding: 0.1em;
-        text-align: center;
-    }
-
-    #back-to-top a {
-        display: block;
-        color: var(--alter-text);
-    }
-}
-
-@media only screen and (min-width: 601px) {
-    #back-to-top {
-        position: fixed;
-        bottom: 30px;
-        left: 10px;
-        font-size: 30px;
-    }
-    
-    #back-to-top a {
-        color: var(--highlight-colour);
-    }
-}
-
 
 #game-link a i, #game-link a:hover  {
     color: #ff00a2;

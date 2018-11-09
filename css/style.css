@@ -201,8 +201,7 @@ button {
     background-color: var(--dark-background);
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    height: 100%;
+    
 }
 
 .product img {
@@ -220,8 +219,8 @@ button {
 }
 
 .order {
-    align-self: center;
-    justify-self: flex-end;
+    /*align-self: center;*/
+    /*justify-self: flex-end;*/
     width: 80%;
     background-color: var(--highlight-colour);
     padding: 7px;
@@ -238,7 +237,7 @@ footer {
     background-color: var(--dark-background);
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 768px) {
     #back-to-top {
         position: fixed;
         bottom: 0.5em;
@@ -254,8 +253,7 @@ footer {
     }
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 600px),
-all and (-webkit-max-device-pixel-ratio: 1.5) and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
     .nav-link {
         font-size: 8vw;
     }

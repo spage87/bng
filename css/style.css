@@ -29,6 +29,14 @@ body {
 
 header {
     color: var(--alter-text);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--highlight-colour);
 }
 
 #logo {
@@ -39,15 +47,17 @@ header {
 
 #nav-bar ul {
     padding: 0;
+    display: flex;
 }
 
 #nav-bar ul li {
     list-style: none;
+    display: block;
 }
 
 .nav-link {
     background-color: var(--highlight-colour);
-    padding: 10px;
+    padding: 0.3em;
     text-transform: uppercase;
     letter-spacing: 0.3em;
 }
@@ -57,36 +67,61 @@ header {
     text-decoration: none;
 }
 
-#nav-bar {
-    position: fixed;
-    top: 5vh;
-    width: var(--navigation-start);
-    z-index: 100;
-}
-
 #nav-bar:hover {
     animation-name: navigation;
     animation-duration: 1s;
 }
 
-@keyframes navigation {
-    0% {
-        width: var(--navigation-start);
+@media only screen and (max-width: 600px) {
+    .full-nav {
+        display: none;
     }
-    100% {
-        width: var(--navigation-end);
+        
+    #back-to-top {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        font-size: 2em;
+        background-color: var(--highlight-colour);
+        padding: 0.1em;
+        text-align: center;
+    }
+
+    #back-to-top a {
+        display: block;
+        color: var(--alter-text);
     }
 }
 
-#back-to-top {
-    position: fixed;
-    bottom: 30px;
-    left: 10px;
-    font-size: 30px;
+@media only screen and (min-width: 601px) {
+    #back-to-top {
+        position: fixed;
+        bottom: 30px;
+        left: 10px;
+        font-size: 30px;
+    }
+    
+    #back-to-top a {
+        color: var(--highlight-colour);
+    }
 }
 
-#back-to-top a {
-    color: var(--highlight-colour);
+
+#game-link a i, #game-link a:hover  {
+    color: #ff00a2;
+}
+
+#trailer-link a i, #trailer-link a:hover {
+    color: #08ff00;
+}
+
+#follow-link a i, #follow-link a:hover {
+    color: #00f7ff;
+}
+
+#buy-link a i, #buy-link a:hover {
+    color: #ffff00;
 }
 
 main {
@@ -129,6 +164,8 @@ section {
     overflow: hidden;
     scroll-behavior: smooth;
     width: 100%;
+    max-height: max-content;
+    min-height: min-content;
 }
 
 .slide {
@@ -167,6 +204,7 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     color: var(--alter-text);
+    padding-bottom: 3em;
 }
 
 .products a {

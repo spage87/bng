@@ -16,49 +16,6 @@
     --navigation-end: 25%;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 600px),
-only screen and (-webkit-max-device-pixel-ratio: 1.5) and (max-width: 600px) {
-    .nav-link {
-        font-size: 4em;
-    }
-
-    .full-nav {
-        display: none;
-    }
-        
-    #back-to-top {
-        position: fixed;
-        bottom: 0px;
-        left: 0px;
-        width: 100%;
-        font-size: 3em;
-        background-color: var(--highlight-colour);
-        padding: 0.1em;
-        text-align: center;
-    }
-
-    #back-to-top a {
-        display: block;
-        color: var(--alter-text);
-    }
-}
-
-@media only screen and (-webkit-max-device-pixel-ratio: 1.5) and (min-width: 601px) {
-    #back-to-top {
-        position: fixed;
-        bottom: 0.5em;
-        right: 10px;
-        font-size: 2em;
-        background-color: var(--main-text);
-        padding: 0.1em;
-        border-radius: 50%;
-    }
-    
-    #back-to-top a {
-        color: var(--highlight-colour);
-    }
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -244,4 +201,51 @@ section {
 
 footer {
     background-color: var(--dark-background);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 600px),
+all and (-webkit-max-device-pixel-ratio: 2) and (max-width: 600px) {
+    .nav-link {
+        font-size: large;
+    }
+
+    .full-nav {
+        display: none;
+    }
+        
+    #back-to-top {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        font-size: large;
+        background-color: var(--highlight-colour);
+        padding: 0.1em;
+        text-align: center;
+    }
+
+    #back-to-top a {
+        display: block;
+        color: var(--alter-text);
+    }
+
+    .products {
+        grid-template-columns: repeat(1, 3fr);
+    }
+}
+
+@media only screen and (-webkit-max-device-pixel-ratio: 1.5) and (min-width: 601px) {
+    #back-to-top {
+        position: fixed;
+        bottom: 0.5em;
+        right: 10px;
+        font-size: 2em;
+        background-color: var(--main-text);
+        padding: 0.1em;
+        border-radius: 50%;
+    }
+    
+    #back-to-top a {
+        color: var(--highlight-colour);
+    }
 }

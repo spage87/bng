@@ -35,6 +35,7 @@ header {
     width: 100%;
     z-index: 100;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background-color: var(--highlight-colour);
 }
@@ -159,6 +160,27 @@ section {
     text-align: center;
 }
 
+.subscribe {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe div {
+    padding: 1em;
+}
+
+input, button {
+    border: none;
+    background-color: var(--highlight-colour);
+    padding: 1.2em;
+    width: 25em; 
+}
+
+button {
+    border: 1px solid var(--main-text);
+    font-weight: bold;
+}
+
 .products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -174,6 +196,10 @@ section {
 .product {
     padding: 20px;
     background-color: var(--dark-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
 }
 
 .product img {
@@ -191,7 +217,9 @@ section {
 }
 
 .order {
-    margin: 10px;
+    align-self: center;
+    justify-self: flex-end;
+    width: 80%;
     background-color: var(--highlight-colour);
     padding: 7px;
     text-align: center;

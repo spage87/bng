@@ -11,9 +11,7 @@
 <body>
     <header id="header">
         <div id="logo">
-            <!-- TODO -->
-            <!--<img src="img/logo.png" id="header-img" alt="Brand New Games">-->
-            <!-- BNG -->
+            <img src="img/logo.png" id="header-img" alt="Brand New Games">
         </div>
         <nav id="nav-bar">
             <ul>
@@ -90,8 +88,8 @@
             <div class="h2-after"></div>
             <div class="content subscribe">
                 <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
-                    <input type="email" placeholder="email address">
-                    <button type="submit">Email Me!</button>
+                    <div><input type="email" placeholder="email address" tabindex="1"></div>
+                    <div><input type="submit" value="Email Me!" tabindex="1"></div>
                 </form>
             </div>
         </section>
@@ -113,7 +111,12 @@
                             <li>Free life size replica of your starter horse Jeeves</li>
                         </ul>
                     </div>
+                    <div id="ultimate" class="order">
+                        <a href="#" tabindex="2">Order Now</a>
+                    </div>
                 </div>
+
+
                 <div class="product">
                     <img src="img/regular.jpg" id="Special Edition">
                     <div class="price">&pound;100</div>
@@ -124,7 +127,11 @@
                             <li>An exclusive Hunter's Golden Bow in single player</li>
                         </ul>
                     </div>
+                    <div id="special" class="order">
+                        <a href="#" tabindex="2">Order Now</a>
+                    </div>
                 </div>
+
                 <div class="product">
                     <img src="img/regular.jpg" id="Bog Standard Edition">
                     <div class="price">&pound;50</div>
@@ -133,16 +140,11 @@
                             <li>Nothing but the bare bones of the game.</li>
                         </ul>
                     </div>
+                    <div id="standard" class="order">
+                        <a href="#" tabindex="2">Order Now</a>
+                    </div>
                 </div>
-                <div id="ultimate" class="order">
-                    <a href="#">Order Now</a>
-                </div>
-                <div id="special" class="order">
-                    <a href="#">Order Now</a>
-                </div>
-                <div id="standard" class="order">
-                    <a href="#">Order Now</a>
-                </div>
+
             </div>
         </section>
     </main>

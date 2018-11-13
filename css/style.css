@@ -12,8 +12,7 @@
     --logo-font: 'Viga', sans-serif;
     --main-font: 'Oswald', sans-serif;
     /* widths */
-    --navigation-start: 5%;
-    --navigation-end: 25%;
+    --header-height: 56px;
 }
 
 body {
@@ -38,16 +37,16 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: var(--highlight-colour);
-    height: 56px;
+    height: var(--header-height);
 }
 
 #logo {
     display: flex;
     font-family: var(--logo-font);
-    font-size: 40px;
+    font-size: 2em;
     color: var(--main-text);
     align-items: center; 
-    padding: 0 1em;
+    padding: 0.3em;
 }
 
 #nav-bar ul {
@@ -58,6 +57,7 @@ header {
 #nav-bar ul li {
     list-style: none;
     display: block;
+    font-size: 100%;
 }
 
 .nav-link {
@@ -124,6 +124,7 @@ section:nth-child(even) {
 
 section {
     min-height: 100vh;
+    padding-top: var(--header-height);
 }
 
 #carousel {

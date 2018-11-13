@@ -2,8 +2,8 @@
     /* colours */
     --additional-highlights: #308ae2;
     --highlight-colour: #23bbbe;
-    --dark-background: #161a34;
-    --main-text: #161a34;
+    --dark-background: #161a35;
+    --main-text: #242d4a;
     --main-background: #f5f7f9;
     --alter-text: #ffffff;
     /* more colours */
@@ -38,12 +38,16 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: var(--highlight-colour);
+    height: 56px;
 }
 
 #logo {
+    display: flex;
     font-family: var(--logo-font);
     font-size: 40px;
-    color: var(--highlight-colour);
+    color: var(--main-text);
+    align-items: center; 
+    padding: 0 1em;
 }
 
 #nav-bar ul {

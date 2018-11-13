@@ -174,7 +174,6 @@ section#screenshot {
 
 .video iframe {
     width: 80vw;
-    height: auto;
 }
 
 .video, .subscribe {
@@ -299,6 +298,10 @@ footer {
 
     #screenshot {
         display: none;
+    }
+
+    .video iframe {
+        height: 80vw;
     }
 
     #back-to-top {

@@ -174,7 +174,7 @@ section#screenshot {
 
 .video iframe {
     width: 80vw;
-    height: 80vh;
+    height: auto;
 }
 
 .video, .subscribe {

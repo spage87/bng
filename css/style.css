@@ -188,7 +188,7 @@ button {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     color: var(--alter-text);
-    padding-bottom: 3em;
+    padding-bottom: 4em;
 }
 
 .products a {
@@ -201,14 +201,13 @@ button {
     background-color: var(--dark-background);
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
 }
 
 .product img {
     max-width: 100%;
     display: block;
     height: auto;
-    margin: auto;
 }
 
 .price {
@@ -219,8 +218,7 @@ button {
 }
 
 .order {
-    /*align-self: center;*/
-    /*justify-self: flex-end;*/
+    margin-top: auto;
     width: 80%;
     background-color: var(--highlight-colour);
     padding: 7px;
